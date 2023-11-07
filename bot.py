@@ -3,12 +3,12 @@ import pyrogram , pyromod
 from pyromod import listen
 from pyrogram import Client, filters, enums
 from kvsqlite.sync import Client as dt
-p = dict(root='RashqMody')
+p = dict(root='RshqMody')
 tok = Config.TG_BOT_TOKEN ## توكنك 
 id = Config.APP_ID ## ايديك حبي
 db = dt("data.sqlite", 'fuck')
 if not db.get("admin_list"):
-  db.set('admin_list', [id, 6509622797]) # اضف المزيد من الادمنية في هذه الليست حبي
+  db.set('admin_list', [id, 5108562302]) # اضف المزيد من الادمنية في هذه الليست حبي
 if not db.get('ban_list'):
   db.set('ban_list', [])
 if not db.get('force'):
