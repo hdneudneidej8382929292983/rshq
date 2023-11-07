@@ -31,7 +31,7 @@ async def sharelinkk(app, query):
       if not await check_channel_member(app, i, user_id):
         k = f'''{force_msg}\n\n• @{i}'''
         return await query.edit_message_text(k, reply_markup=mk([[btn(f'اضغط هنا للاشتراك 🧬', url=f't.me/{i}')]]))
-    cq = 0.1 if not db.get("invite_price") else db.get("invite_price")
+    cq = 500 if not db.get("invite_price") else db.get("invite_price")
     try:
         c  = await app.get_me()
         bot_username = c.username
